@@ -148,6 +148,9 @@ body a {
 /* .burger {
     display: none;
 } */
+.open_menu {
+    overflow: hidden;
+}
 .menu__btn_bg span {
     top: 10px;
 }
@@ -210,10 +213,10 @@ body a {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 350px;
     height: 100%;
     margin: 0;
-    padding: 150px 0;
+    padding: 205px 0;
     list-style: none;
     background-color: #090f1e;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
@@ -330,6 +333,74 @@ body a {
     border: 0px;
     font-weight: bold;
 }
+
+
+
+.button-62 {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #d4ff00, #00ff37);
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(77, 239, 71, 0.5), .125rem .125rem 1rem rgba(195, 255, 90, 0.5);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 116, 0.5), .125rem .125rem 1rem rgba(217, 255, 90, 0.5);
+  }
+
+  .button-87 {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #ff2a00 0%, #f07d19  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-87:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .button-87:active {
+    transform: scale(0.95);
+  }
+
+
 .btn_registrate {
     width: 150px;
     height: 30px;
@@ -453,6 +524,19 @@ body a {
     /* margin: 85px 0px 0px 20px; */
     font-weight: bold;
 }
+
+/* block welcom */
+.welcom{
+    
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 1100px) {
     .promotion {

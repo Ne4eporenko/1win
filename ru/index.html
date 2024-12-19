@@ -99,8 +99,8 @@
                         <a href="/"><img src="../images/Hit_the_bank.png"></a>
                     </div>
                     <div class="btn_reg_burger">
-                        <button class="btn_input">Вход</button>
-                        <button class="btn_registrate">Регистрация</button>
+                        <button class="button-62" role="button">Вход</button>
+                    <button class="button-87" role="button">Регистрация</button>
                     </div>
                 </ul>
             </div>
@@ -128,8 +128,8 @@
                     </select>
                 </div>
                 <div class="btn_reg">
-                    <button class="btn_input">Вход</button>
-                    <button class="btn_registrate">Регистрация</button>
+                    <button class="button-62" role="button">Вход</button>
+                    <button class="button-87" role="button">Регистрация</button>
                 </div>
             </div>
         </div>
@@ -204,6 +204,13 @@
 
         </div>
 
+        <div class="welcom">
+            <!-- <div class="welcom_img"><img src="../images/welcom_img.webp"></div> -->
+            <div class="welcom_content">
+            <h1>1WIN</br>ВХОД НА ОФИЦИАЛЬНЫЙ САЙТ</h1>
+            </div>
+        </div>
+
     </main>
 
 
@@ -243,6 +250,12 @@
         eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
         if (restore) selObj.selectedIndex = 0;
     }
+
+
+    document.body.querySelector(".menu__btn_bg").addEventListener('click', function(event) {
+        if ($('body').hasClass("open_menu")) { $('body').removeClass('open_menu')}
+        else {$('body').addClass("open_menu")};
+    });
 </script>
 
 
