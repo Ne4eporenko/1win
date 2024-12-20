@@ -334,41 +334,45 @@ body a {
     font-weight: bold;
 }
 
-
-
 .button-62 {
     width: 100px;
     height: 35px;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #d4ff00, #00ff37);
     border: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     outline: transparent;
     padding: 0 1rem;
     text-align: center;
     text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     text-transform: uppercase;
-  }
-  
-  .button-62:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(77, 239, 71, 0.5), .125rem .125rem 1rem rgba(195, 255, 90, 0.5);
-  }
-  
-  .button-62:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 116, 0.5), .125rem .125rem 1rem rgba(217, 255, 90, 0.5);
-  }
+}
 
-  .button-87 {
+.button-62:not([disabled]):focus {
+    box-shadow:
+        0 0 0.25rem rgba(0, 0, 0, 0.5),
+        -0.125rem -0.125rem 1rem rgba(77, 239, 71, 0.5),
+        0.125rem 0.125rem 1rem rgba(195, 255, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+    box-shadow:
+        0 0 0.25rem rgba(0, 0, 0, 0.5),
+        -0.125rem -0.125rem 1rem rgba(71, 239, 116, 0.5),
+        0.125rem 0.125rem 1rem rgba(217, 255, 90, 0.5);
+}
+
+.button-87 {
     width: 150px;
     height: 35px;
     border-radius: 20px;
@@ -382,24 +386,23 @@ body a {
     border: 0px;
     font-weight: 700;
     box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #ff2a00 0%, #f07d19  51%, #FF512F  100%);
+    background-image: linear-gradient(45deg, #ff2a00 0%, #f07d19 51%, #ff512f 100%);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button-87:hover {
+}
+
+.button-87:hover {
     background-position: right center;
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-  }
-  
-  .button-87:active {
-    transform: scale(0.95);
-  }
+}
 
+.button-87:active {
+    transform: scale(0.95);
+}
 
 .btn_registrate {
     width: 150px;
@@ -526,22 +529,55 @@ body a {
 }
 
 /* block welcom */
-.welcom{
-    
+.welcom {
+    background-image: url("../images/welcom_img.webp");
+    height: 800px;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: auto;
+    left: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 350px;
 }
-
-
-
-
-
-
-
-
+.welcom_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 150px;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+}
+.welcom_content h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.welcom_color {
+    color: #33a2f6;
+    font-weight: bold;
+}
+#welcom_btn {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.welcom_content p {
+    margin: 0px;
+    font-size: 22px;
+}
 
 @media (max-width: 1100px) {
     .promotion {
         flex-direction: column;
         height: 100%;
+        z-index: 10;
+        position: relative;
     }
     .myslider {
         width: 100%;
@@ -565,6 +601,9 @@ body a {
         padding: 20px 0px;
         background-position: center;
     }
+    .welcom_content {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -575,6 +614,11 @@ body a {
 @media (max-width: 900px) {
     .menu_btn a {
         display: none;
+    }
+}
+@media (max-width: 800px) {
+    .welcom_content {
+        font-size: 20px;
     }
 }
 @media (max-width: 750px) {
@@ -638,10 +682,25 @@ body a {
         justify-content: space-around;
         display: flex;
     }
+    .welcom_content {
+        font-size: 14px;
+    }
+    .welcom_content p {
+        font-size: 12px;
+    }
 }
 @media (max-width: 440px) {
     .menu__box {
         width: 100%;
+    }
+    #welcom_btn {
+        margin-top: 15px;
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .welcom_content h1 {
+        font-size: 20px;
     }
 }
 @media (max-width: 350px) {
@@ -651,7 +710,6 @@ body a {
         height: 80px;
     }
 }
-
 
 @media (min-width: 1000px) {
     #btn_android_download {
