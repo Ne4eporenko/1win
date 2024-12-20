@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Установите конечную дату
-    const deadline = new Date('2024-12-31T23:59:59');
+    const deadline = new Date('2026-12-31T23:59:59');
     
     // Найдите элементы DOM
     // const elDays = document.querySelector('.timer__days');

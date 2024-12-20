@@ -18,7 +18,9 @@ body button {
 body a {
     text-decoration: none;
 }
-
+.content h2 {
+    font-weight: bold;
+}
 /* blocl header */
 
 .header_line_top {
@@ -302,6 +304,8 @@ body a {
 .menu_btn a {
     display: flex;
     width: 50px;
+    align-items: center;
+    justify-content: center;
 }
 .menu_btn img {
     width: 100%;
@@ -451,6 +455,7 @@ body a {
     border: 0px;
     margin: 20px 0px 0px 20px;
     font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 .slick-slide {
     height: 300px;
@@ -524,7 +529,7 @@ body a {
     border-radius: 20px;
     border: 0px;
     background: #fff;
-    /* margin: 85px 0px 0px 20px; */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     font-weight: bold;
 }
 
@@ -614,12 +619,10 @@ body a {
     justify-content: space-around;
 }
 .about_reg_content {
-    width: 50%;
-    padding: 0px 20px;
+    width: 45%;
 }
 .about_reg_list {
-    width: 50%;
-    padding: 0px 20px;
+    width: 45%;
 }
 .about_reg_list li {
     color: #33a2f6;
@@ -643,6 +646,17 @@ body a {
     font-size: 12px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
+.bb1_content button {
+    position: relative;
+    z-index: 3;
+    /* cursor: pointer; */
+}
+.bb2_content a {
+    position: relative;
+    z-index: 3;
+    /* cursor: pointer; */
+}
+
 .banner_bonus h3 {
     width: 270px;
     font-weight: bold;
@@ -658,6 +672,7 @@ body a {
 }
 .banner_bonus {
     position: relative;
+    box-shadow: 3px 3px 18px rgb(0 0 0);
 }
 .bb1_img {
     position: absolute;
@@ -682,13 +697,16 @@ body a {
 .bb2_content div {
     margin-top: 80px;
 }
+.bb2_content button {
+    cursor: pointer;
+}
 .bb2_img {
     position: absolute;
 }
 .bb2_img img {
     width: 407px;
     margin-left: 236px;
-    margin-top: 0px;
+    margin-top: -6px;
     border-radius: 10px;
 }
 
@@ -749,6 +767,80 @@ body a {
     font-weight: bold;
     text-align: center;
 }
+#btn_android_download span {
+    font-weight: bold;
+    text-align: center;
+}
+/* info content block */
+.info_content a {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.info_btn {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0px;
+}
+#info_btn {
+    width: 230px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 0px;
+}
+.info_content_casino {
+    margin-top: 50px;
+}
+.info_promotion {
+    background: linear-gradient(
+        -45deg,
+        #ee7752,
+        /* Первый цвет */ #e73c7e,
+        /* Второй цвет */ #23a6d5,
+        /* Третий цвет */ #23d5ab /* Четвертый цвет */
+    );
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+    /* background-image: linear-gradient(45deg, #0098de 0%, #0032c7 51%, #2e00c6 100%); */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: absolute;
+    margin: 20px auto;
+    top: auto;
+    left: 0px;
+    min-width: 350px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.info_promo_img img {
+    width: 246px;
+}
+.info_promotion_text h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.info_promotion_text button {
+    border: 0px;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
 
 @media (max-width: 1350px) {
     .promotion_center {
@@ -757,7 +849,15 @@ body a {
     }
     .banner_bonus {
         margin: 10px 0px;
-        padding: 0px 200px;
+        /* padding: 0px 200px; */
+    }
+    .bb1_img,
+    .bb2_img {
+        right: 0px;
+    }
+    #bb1,
+    #bb2 {
+        width: 80%;
     }
 }
 
@@ -799,9 +899,6 @@ body a {
     .about {
         margin-top: 700px;
     }
-    .banner_bonus {
-        padding: 0px 130px;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -816,9 +913,6 @@ body a {
     .about {
         margin-top: 500px;
     }
-    .banner_bonus {
-        padding: 0px 50px;
-    }
 }
 @media (max-width: 840px) {
     .about_img {
@@ -831,6 +925,9 @@ body a {
     }
     .about {
         margin-top: 450px;
+    }
+    .bb1_img {
+        right: 0;
     }
 }
 @media (max-width: 750px) {
@@ -936,40 +1033,35 @@ body a {
     .about_reg_list {
         width: 100%;
     }
+
     .banner_bonus {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        width: 80%;
-    }
-    .banner_bonus h3 {
-        width: 600px;
+        position: relative;
+        min-height: 300px;
     }
     .bb1_img,
     .bb2_img {
-        position: relative;
+        position: absolute;
+        bottom: 0px;
+    }
+    .bb1_img img {
+        width: 65%;
+        max-height: 190px;
+    }
+    .bb2_img img {
+        width: 65%;
+        max-height: 190px;
     }
     .bb1_content,
     .bb2_content {
-        position: relative;
+        position: absolute;
         width: 100%;
     }
-    #bb1,
-    #bb2 {
-        height: auto;
+    .info_promotion {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        height: 489px;
     }
-    .bb1_img img {
-        width: 80%;
-    }
-    .bb2_img img {
-        width: 80%;
-    }
-    .banner_bonus h3 {
-        width: 300px;
-    }
-    
 }
 @media (max-width: 500px) {
     .about {
@@ -1001,6 +1093,14 @@ body a {
     }
     .about {
         margin-top: 200px;
+    }
+    .bb1_img img {
+        position: absolute;
+        top: -174px;
+    }
+    .bb2_img img {
+        position: absolute;
+        top: -125px;
     }
 }
 
