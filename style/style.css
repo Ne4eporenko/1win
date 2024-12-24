@@ -27,7 +27,7 @@ body a {
     text-decoration: none;
 }
 body a:hover {
-    font-weight: bold;
+    color: #ffffff;
 }
 .content h2 {
     font-weight: bold;
