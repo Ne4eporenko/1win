@@ -1,0 +1,18 @@
+User-agent: *
+Allow: *
+Allow: /ru/*
+Allow: /az/*
+Allow: /kk/*
+
+Allow: *.js
+Allow: *.css
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.ico
+Allow: *.webp
+Allow: /sitemap.xml
+
+Sitemap: https://1win-1win.online/sitemap.xml
+
